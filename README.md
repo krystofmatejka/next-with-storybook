@@ -11,7 +11,20 @@ Simple template for js web application
 
 ## Quick start
 
+### Install dependencies
+
 ```bash
 npm install
+```
+
+### Run dev server
+
+```bash
 npm run dev
+```
+
+### Run storybook
+
+```bash
+npm run storybook
 ```

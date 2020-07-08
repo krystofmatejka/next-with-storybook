@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook"
   },
   "repository": {
     "type": "git",
@@ -26,10 +27,12 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@storybook/react": "^5.3.19",
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "babel-preset-react-app": "^9.1.2"
   }
 }
