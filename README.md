@@ -8,6 +8,7 @@ Simple template for js web application
  - react
  - typescript
  - styled components
+ - storybook
 
 ## Quick start
 
