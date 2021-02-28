@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import styled from 'styled-components'
 
 const StyledHeading = styled.h1`
@@ -10,4 +10,4 @@ interface Props {
   text: string
 }
 
-export const Header = ({text}: Props) => <StyledHeading>{text}</StyledHeading>
+export const Header: FC<Props> = ({text}) => <StyledHeading>{text}</StyledHeading>

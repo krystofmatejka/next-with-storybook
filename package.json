@@ -21,21 +21,19 @@
   },
   "homepage": "https://github.com/kxmatejka/next-template#readme",
   "dependencies": {
-    "next": "^9.5.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-spring": "^8.0.27",
-    "react-use-gesture": "^7.0.16",
-    "styled-components": "^4.4.1"
+    "next": "10",
+    "react": "17",
+    "react-dom": "17",
+    "styled-components": "5"
   },
   "devDependencies": {
     "@storybook/react": "^5.3.19",
     "@types/node": "^12.12.53",
-    "@types/react": "^16.9.44",
-    "@types/react-dom": "^16.9.8",
-    "@types/styled-components": "^4.4.3",
+    "@types/react": "17",
+    "@types/react-dom": "17",
+    "@types/styled-components": "^5.1.7",
     "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-react-app": "^9.1.2",
-    "typescript": "^3.9.7"
+    "typescript": "4"
   }
 }
