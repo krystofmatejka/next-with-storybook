@@ -1,8 +1,10 @@
 import React from 'react'
 import {Header} from '../components/header'
 
-export const Home = () => {
+const Home = () => {
   return (
-      <Header text='Heading' />
+    <Header text='Heading' />
   )
 }
+
+export default Home
