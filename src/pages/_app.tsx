@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 const SpringApp = ({Component, pageProps}) => {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle/>
       <Component {...pageProps} />
     </>
   )

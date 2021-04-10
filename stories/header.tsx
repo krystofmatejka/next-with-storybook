@@ -1,7 +1,7 @@
 import {Header} from '../src/components/header'
 
 export default {
-  title: 'Header'
+  title: 'Header',
 }
 
-export const Default = () => <Header text='Some heading' />
+export const Default = () => <Header text='Some heading'/>
