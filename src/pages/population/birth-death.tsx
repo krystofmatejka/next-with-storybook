@@ -1,8 +1,9 @@
 import React from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts'
+import {Container, Heading} from './components'
 import rawData from './data/data.json'
 
-const data = rawData.map((rec) => ({
+const data = rawData.filter((rec) => rec.year >= 1947).map((rec) => ({
   year: rec.year,
   births: rec['live-births'],
   deaths: rec['deaths-total'],
@@ -10,28 +11,30 @@ const data = rawData.map((rec) => ({
 
 export const BirthDeath = () => {
   return (
-    <div>
-      <h2>Birth and death</h2>
-      <LineChart
-        width={960}
-        height={400}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
+    <Container>
+      <Heading>Birth and death</Heading>
+      <ResponsiveContainer
+        width='100%' height={300}
+        id='birth-and-death'
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="year" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="births" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="deaths" stroke="#82ca9d" activeDot={{ r: 8 }} />
-      </LineChart>
-
-    </div>
+        <LineChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray='3 3'/>
+          <XAxis dataKey='year'/>
+          <YAxis/>
+          <Tooltip/>
+          <Legend/>
+          <Line type='monotone' dataKey='births' stroke={'#8ecb58'} activeDot={{r: 5}} strokeWidth={2}/>
+          <Line type='monotone' dataKey='deaths' stroke={'#6d6d6d'} activeDot={{r: 5}} strokeWidth={2}/>
+        </LineChart>
+      </ResponsiveContainer>
+    </Container>
   )
 }
