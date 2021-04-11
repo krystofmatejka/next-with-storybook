@@ -8,6 +8,7 @@ const Container = styled.div`
   max-width: 960px;
   margin: auto;
   padding: 25px 0;
+  font-family: "Open Sans", sans-serif;
 `
 
 const Population = () => {
