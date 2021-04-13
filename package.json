@@ -7,8 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook",
-    "ts-node": "ts-node -P tsconfig-cli.json"
+    "storybook": "start-storybook"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,6 @@
     "next": "10",
     "react": "17",
     "react-dom": "17",
-    "recharts": "^2.0.9",
     "styled-components": "5"
   },
   "devDependencies": {
@@ -33,14 +31,12 @@
     "@types/node": "^12.12.53",
     "@types/react": "17",
     "@types/react-dom": "17",
-    "@types/recharts": "^1.8.19",
     "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-react-app": "^9.1.2",
     "eslint": "^7.24.0",
-    "ts-node": "^9.1.1",
     "typescript": "4"
   }
 }
