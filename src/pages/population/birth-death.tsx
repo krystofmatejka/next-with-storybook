@@ -17,11 +17,19 @@ export const BirthDeath = () => {
         width='100%' height={300}
         id='birth-and-death'
       >
-        <LineChart data={data}>
+        <LineChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
           <CartesianGrid strokeDasharray='3 3'/>
           <XAxis dataKey='year'/>
-          <YAxis tickFormatter={(value) => value.toLocaleString()}/>
-          <Tooltip formatter={(value, name) => [value.toLocaleString(), name]}/>
+          <YAxis/>
+          <Tooltip/>
           <Legend/>
           <Line type='monotone' dataKey='births' stroke={'#8ecb58'} activeDot={{r: 5}} strokeWidth={2}/>
           <Line type='monotone' dataKey='deaths' stroke={'#6d6d6d'} activeDot={{r: 5}} strokeWidth={2}/>

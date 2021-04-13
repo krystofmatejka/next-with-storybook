@@ -31,12 +31,20 @@ export const PopulationGrowth = () => {
         width='100%' height={300}
         id='population-growth'
       >
-        <ComposedChart data={data}>
+        <ComposedChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
           <CartesianGrid strokeDasharray='3 3'/>
           <XAxis dataKey='year'/>
-          <YAxis tickFormatter={(value) => value.toLocaleString()}/>
+          <YAxis/>
           <Tooltip
-            formatter={(value, name) => [value.toLocaleString(), labels[name].text]}
+            formatter={(value, name) => [value, labels[name].text]}
             itemSorter={(item) => {
               if (labels[item.name].color) {
                 item.color = labels[item.name].color
@@ -49,7 +57,7 @@ export const PopulationGrowth = () => {
           }} />
           <Bar dataKey='populationIncrease' fill={'#00000020'}/>
           <Line type='monotone' dataKey='naturalIncrease' stroke={'#8ecb58'} activeDot={{r: 5}} strokeWidth={2}/>
-          <Line type='monotone' dataKey='netMigration' stroke={'#4a74c9'} activeDot={{r: 5}} strokeWidth={2}/>
+          <Line type='monotone' dataKey='netMigration' stroke={'#e05858'} activeDot={{r: 5}} strokeWidth={2}/>
         </ComposedChart>
       </ResponsiveContainer>
       <ul>
