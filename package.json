@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/kxmatejka/next-template#readme",
   "dependencies": {
-    "next": "10",
+    "next": "11",
     "react": "17",
     "react-dom": "17",
     "styled-components": "5"
