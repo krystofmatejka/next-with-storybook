@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const SpringApp = ({Component, pageProps}) => {
+const App = ({Component, pageProps}) => {
   return (
     <>
       <GlobalStyle/>
@@ -18,4 +18,4 @@ const SpringApp = ({Component, pageProps}) => {
   )
 }
 
-export default SpringApp
+export default App
